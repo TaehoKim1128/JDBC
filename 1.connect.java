@@ -4,7 +4,7 @@ public class Program {
         Class.forName("com.mysql.jdbc.Driver"); //can be omitted
       
         String url = "jdbc:mysql://localhost:3306/test";
-        Connection con = DriverManager.getConnection(url,"root","xogh7149@@");
+        Connection con = DriverManager.getConnection(url,"root","password");
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery("select * from employee");
         while(rs.next()){
